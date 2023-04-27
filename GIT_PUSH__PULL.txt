@@ -1,0 +1,59 @@
+DEV
+====
+[1st time]
+git init
+git remote add origin https://github.com/<username>/<repo_name>
+git add <file/dir>
+git commit -m "<message>"
+git push -u origin master
+
+[2nd time]
+git add <file/dir>
+git commit -m "<message>"
+git push -u origin master
+
+[New Branch]
+git add README.md
+git commit -m "<message>"
+git branch -M <branch-name>
+git push -u origin <branch-name>
+
+[DELETE LOCAL BRANCH]
+git branch -d <branch-name>
+
+[DELETE REMOTE BRANCH]
+git push origin --delete <branch-name>
+
+[VIEW ALL LOCAL BRANCHES]
+git branch
+
+[VIEW ALL REMOTE BRANCHES]
+git branch -r
+
+[VIEW REMOTE REPO URL OF CURRENT DIRECTORY]
+git config --get remote.origin.url
+
+[IGNORE LOCAL CHANGES]
+git reset --hard
+
+[SIGN IN TO GIT FROM CLI]
+git config --global user.name "Stephen Phyo"
+git config --global user.email "stephenphyo2019.official@gmail.com"
+git config --list
+
+[CLONE PRIVATE REPO AS COLLABORATOR]
+git clone https://<username>:<pat>@github.com/<username>/<reponame>.git
+
+PROD
+=====
+git init
+git remote add origin https://github.com/<username>/<repo_name>
+git pull origin master 
+
+
+NEW COMMAND
+=============
+git log
+git log <sha1>
+git checkout <sha1>
+git show <sha1>
